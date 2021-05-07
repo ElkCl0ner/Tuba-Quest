@@ -29,7 +29,19 @@ define config.version = "1.0"
 ## Text that is placed on the game's about screen. Place the text between the
 ## triple-quotes, and leave a blank line between paragraphs.
 
-define gui.about = _p("""
+define gui.about = _p("""Final project for 420-LCW-MS PROGRAMMING TECHNIQUES AND APPLICATIONS, Marianopolis, W21.
+
+Made by:
+
+Lin Wei Li - Lead programmer
+
+Jiahe Lin - Lead script writer
+
+Easky Cen - Script writer and game balancing
+
+Jiaxing Jiang - Graphics design and item design
+
+*Note: All participants have provided code for the game, but some were tasked with other necessary elements of the game.
 """)
 
 

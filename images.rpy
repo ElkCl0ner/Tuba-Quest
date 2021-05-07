@@ -108,79 +108,108 @@ init:
     # Items
 
     # Equipment
+
     # Weapons
+
     image sword 1:
         "Sword 1.png"
         size(120, 120)
+        
     image sword 2:
         "Sword 2.png"
         size(120, 120)
+
     image sword 3:
         "Sword 3.png"
         size(120, 120)
+
     image sword 4:
         "Sword 4.png"
         size(120, 120)
+
     image sword 5:
         "Sword 5.png"
         size(120, 120)
+
     image sword 6:
         "Sword 6.png"
         size(120, 120)
+
     # Helmet
+
     image helmet 1:
         "Helmet 1.png"
         size(120, 120)
+
     image helmet 2:
         "Helmet 2.png"
         size(120, 120)
+
     image helmet 3:
         "Helmet 3.png"
         size(120, 120)
+
     image helmet 4:
         "Helmet 4.png"
         size(120, 120)
+
     image helmet 5:
         "Helmet 5.png"
         size(120, 120)
+
     image helmet 6:
         "Helmet 6.png"
         size(120, 120)
+
+
     # Armor
+
     image armor 1:
         "Armor 1.png"
         size(120, 120)
+
     image armor 2:
         "Armor 2.png"
         size(120, 120)
+
     image armor 3:
         "Armor 3.png"
         size(120, 120)
+
     image armor 4:
         "Armor 4.png"
         size(120, 120)
+
     image armor 5:
         "Armor 5.png"
         size(120, 120)
+
     image armor 6:
         "Armor 6.png"
         size(120, 120)
+
     # Shield
+
     image shield 1:
         "Shield 1.png"
         size(120, 120)
+
     image shield 2:
         "Shield 2.png"
         size(120, 120)
+
     image shield 3:
         "Shield 3.png"
         size(120, 120)
+
     image shield 4:
         "Shield 4.png"
         size(120, 120)
+
     image shield 5:
         "Shield 5.png"
         size(120, 120)
+
     image shield 6:
         "Shield 6.png"
         size(120, 120)

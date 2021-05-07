@@ -88,22 +88,30 @@ label explore:
     if roll < 2:
         "You found a large potion!"
         $p.potions[2] += 1
+        jump goto_town
 
     # Medium Potion
     elif roll < 5:
         "You found a medium potion!"
         $p.potions[1] += 1
+        jump goto_town
 
     # Small potion
     elif roll < 10:
         "You found a small potion!"
         $p.potions[0] += 1
+        jump goto_town
 
     # Money
     elif roll < 15:
         $finding = renpy.random.randint(0, 10 * (act ** 2))
         "You found $[finding]!"
         $p.money += finding
+        jump goto_town
+
+    elif roll < 20:
+        "You found nothing. You go back to town."
+        jump goto_town
 
     # Fight
     else:

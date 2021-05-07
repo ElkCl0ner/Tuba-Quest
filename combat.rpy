@@ -39,7 +39,7 @@ label start_fight_test:
 label start_fight_tuto:
 
     # Create bandit enemy
-    $e = Enemy("bandit", "Bandit", 20, 5, 0, lt_test, 15, 3)
+    $e = Enemy("bandit", "Bandit", 20, 5, 0, lt_0, 15, 3)
 
     # Show combat screen
     show screen combat
@@ -50,7 +50,7 @@ label start_fight_tuto:
 label start_fight_miniQuest1:
 
     # Create mini boss
-    $e = Enemy("apprentice", "Aprentice Wizard", 100, 15, 15, lt_test, 20, 10)
+    $e = Enemy("apprentice", "Aprentice Wizard", 100, 15, 15, lt_1, 20, 10)
 
     # Show combat screen
     show screen combat
@@ -61,7 +61,7 @@ label start_fight_miniQuest1:
 label start_fight_quest1:
 
     # Create boss
-    $e = Enemy("wizard", "Tuba Wizard", 400, 30, 15, lt_test, 100, 20)
+    $e = Enemy("wizard", "Tuba Wizard", 400, 30, 15, lt_1_boss, 100, 20)
 
     # Show combat screen
     show screen combat
@@ -72,7 +72,7 @@ label start_fight_quest1:
 label start_fight_miniQuest2:
 
     # Create mini boss
-    $e = Enemy("gunner", "Tuba Gunner", 350, 35, 50, lt_test, 60, 12)
+    $e = Enemy("gunner", "Tuba Gunner", 350, 35, 50, lt_2, 60, 12)
 
     # Show combat screen
     show screen combat
@@ -83,7 +83,7 @@ label start_fight_miniQuest2:
 label start_fight_quest2:
 
     # Create boss
-    $e = Enemy("heavy gunner", "Heavy Gunner", 1000, 40, 60, lt_test, 200, 25)
+    $e = Enemy("heavy gunner", "Heavy Gunner", 1000, 40, 60, lt_2_boss, 200, 25)
 
     # Show combat screen
     show screen combat
@@ -94,7 +94,7 @@ label start_fight_quest2:
 label start_fight_miniQuest3:
 
     # Create mini boss
-    $e = Enemy("fencer 1", "Violin Fencer", 1750, 85, 95, lt_test, 250, 23)
+    $e = Enemy("fencer 1", "Violin Fencer", 1750, 85, 95, lt_3, 250, 23)
 
     # Show combat screen
     show screen combat
@@ -105,7 +105,7 @@ label start_fight_miniQuest3:
 label start_fight_quest3:
 
     # Create boss
-    $e = Enemy("fencer 2", "Violin Fencer", 1300, 110, 115, lt_test, 0, 32)
+    $e = Enemy("fencer 2", "Violin Fencer", 1300, 110, 115, lt_3_boss, 0, 32)
 
     # Show combat screen
     show screen combat
@@ -116,7 +116,7 @@ label start_fight_quest3:
 label start_fight_quest4:
 
     # Create mini boss
-    $e = Enemy("knight", "Tuba Knight", 2000, 100, 250, lt_test, 300, 30)
+    $e = Enemy("knight", "Tuba Knight", 2000, 100, 250, lt_4_boss, 300, 30)
 
     # Show combat screen
     show screen combat
@@ -127,7 +127,7 @@ label start_fight_quest4:
 label start_fight_quest4a:
 
     # Create boss
-    $e = Enemy("king 1", "Tuba King", 3000, 120, 200, lt_test, 350, 40)
+    $e = Enemy("king 1", "Tuba King", 3000, 120, 200, lt_4_boss, 350, 40)
 
     # Show combat screen
     show screen combat
@@ -138,7 +138,7 @@ label start_fight_quest4a:
 label start_fight_quest4b:
 
     # Create boss
-    $e = Enemy("king 2", "Tuba King", 2999, 180, 180, lt_test, 500, 45)
+    $e = Enemy("king 2", "Tuba King", 2999, 180, 180, lt_4_boss, 500, 45)
 
     # Show combat screen
     show screen combat
@@ -149,7 +149,7 @@ label start_fight_quest4b:
 label start_fight_option2:
 
     # Create boss
-    $e = Enemy("queen", "Tuba Queen", 5000, 200, 150, lt_test, 0, 100)
+    $e = Enemy("queen", "Tuba Queen", 5000, 200, 150, lt_4_boss, 0, 100)
 
     # Show combat screen
     show screen combat
@@ -160,7 +160,7 @@ label start_fight_option2:
 label start_fight_option2a:
 
     # Create boss
-    $e = Enemy("queen 2", "Tuba Queen", 666, 220, 390, lt_test, 100000, 10000)
+    $e = Enemy("queen 2", "Tuba Queen", 666, 220, 390, lt_4_boss, 100000, 10000)
 
     # Show combat screen
     show screen combat

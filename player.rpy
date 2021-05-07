@@ -93,6 +93,10 @@ init python:
         def levelUp(self):
             '''Check if the player levels up and boost player's stats if level up.'''
 
+            # Stop at level 20
+            if self.lvl >= 20:
+                return False
+
             # Calculate level considering player xp
             level = int(-3 + (self.xp + 9) ** (0.5))
 
