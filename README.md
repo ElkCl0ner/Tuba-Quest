@@ -1,4 +1,4 @@
-Final project for 420-LCW-MS PROGRAMMING TECHNIQUES AND APPLICATIONS, Marianopolis, W21.
+Final project for 420-LCW-MS s.01 PROGRAMMING TECHNIQUES AND APPLICATIONS, Marianopolis, W21.
 
 Made by:
 
