@@ -38,7 +38,8 @@ screen inventory_screen:
     # $SetVariable("selected_item", None)
 
     # Background
-    add "inventory background"
+    # add "inventory background"
+    add "#000000"
 
     hbox:
 

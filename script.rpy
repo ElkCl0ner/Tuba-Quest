@@ -15,13 +15,50 @@ define m = Character("Maestro")
 define v = Character("Villager")
 define t = Character("Tutorial")
 
+init 3 python:
+
+    # Player instance
+    p = Player()
+
+    # Testing
+    # p.inv[diamond_sword] = 1
+    # p.inv[shield] = 1
+    # p.hp = 20
+    p.potions = [2, 0, 0]
+
+    # Important variables
+    act = -2
+    styles = ["light attack", "normal attack", "heavy attack"]
+    potionPrices = [10, 25, 50]
+
+    # Less important variables
+    finding = 0
+    reward = 0
+    levelUp = False
+    atk = ["normal attack", 0]
+    selected_item = None
+    selected_potion = 0
+    shopping = False
+    current_shop = st_test
+    et_now = None
+    roll = 0
+    current_music = None
+    questing = False
+    miniQuestsStatuses = [0, 0, 0]
+    questsStatuses = [0, 0, 0, 0]
+
 # The game starts here.
 
 label start:
 
     # Force reset
     python:
-        
+
+        # Equipment
+        for equipment in p.equipment.values():
+            if equipment:
+                equipment.unequip()
+
         # Player instance
         p = Player()
 
