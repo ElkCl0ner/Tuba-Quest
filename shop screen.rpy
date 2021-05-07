@@ -15,6 +15,8 @@ screen shop_screen:
         $current_shop = st_2
     elif act == 3:
         $current_shop = st_3
+    elif act == 4:
+        $current_shop = st_4
     elif act == -1:
         $current_shop = st_tuto
     else:

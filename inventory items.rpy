@@ -73,3 +73,15 @@ init python:
         def __init__(self, img, name, value, defense):
             Equippable.__init__(self, img, name, value, slot = "shield")
             self.defense = defense
+
+    def changeEquip(p, equipment):
+        '''Make sure that the player unequips their currently equipped item before equipping a new one.'''
+
+        slot = equipment.slot
+
+        # Unequip
+        if p.equipment[slot]:
+            p.equipment[slot].unequip()
+
+        # Equip
+        equipment.equip()

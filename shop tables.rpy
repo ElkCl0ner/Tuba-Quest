@@ -9,3 +9,5 @@ init 2 python:
     st_2 = (fender_mouthpiece, fender_bell, fender_tube, fender_valve)
 
     st_3 = (yamaha_mouthpiece, yamaha_bell, yamaha_tube, yamaha_valve)
+
+    st_4 = (shure_mouthpiece, shure_bell, shure_tube, shure_valve)

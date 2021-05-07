@@ -15,41 +15,42 @@ define m = Character("Maestro")
 define v = Character("Villager")
 define t = Character("Tutorial")
 
-init 3 python:
-
-    # Player instance
-    p = Player()
-
-    # Testing
-    # p.inv[diamond_sword] = 1
-    # p.inv[shield] = 1
-    # p.hp = 20
-    p.potions = [2, 0, 0]
-
-    # Important variables
-    act = -2
-    styles = ["light attack", "normal attack", "heavy attack"]
-    potionPrices = [10, 25, 50]
-
-    # Less important variables
-    finding = 0
-    reward = 0
-    levelUp = False
-    atk = ["normal attack", 0]
-    selected_item = None
-    selected_potion = 0
-    shopping = False
-    current_shop = st_test
-    et_now = None
-    roll = 0
-    current_music = None
-    questing = False
-    miniQuestsStatuses = [0, 0, 0]
-    questsStatuses = [0, 0, 0, 0]
-
 # The game starts here.
 
 label start:
+
+    # Force reset
+    python:
+        
+        # Player instance
+        p = Player()
+
+        # Testing
+        # p.inv[diamond_sword] = 1
+        # p.inv[shield] = 1
+        # p.hp = 20
+        p.potions = [2, 0, 0]
+
+        # Important variables
+        act = -2
+        styles = ["light attack", "normal attack", "heavy attack"]
+        potionPrices = [10, 25, 50]
+
+        # Less important variables
+        finding = 0
+        reward = 0
+        levelUp = False
+        atk = ["normal attack", 0]
+        selected_item = None
+        selected_potion = 0
+        shopping = False
+        current_shop = st_test
+        et_now = None
+        roll = 0
+        current_music = None
+        questing = False
+        miniQuestsStatuses = [0, 0, 0]
+        questsStatuses = [0, 0, 0, 0]
 
     scene bg forest
 
@@ -146,7 +147,7 @@ label miniQuest1:
     play music battle loop
 
     scene bg forest
-    "You proceed to the location Villager A indicated for you. As expected, you discover there are many wizard apprentices patrolling the area. You try to sneak into the building…"
+    "You proceed to the location Villager indicated for you. As expected, you discover there are many wizard apprentices patrolling the area. You try to sneak into the building…"
     appr "INTRUDER!!!"
     scene bg lab
     jump start_fight_miniQuest1
@@ -195,12 +196,12 @@ label quest1a:
 
     play music act1 loop
 
-    "A portal appears suddenly, expecting an enemy, you ready your instrument. However, a woman in an elegant dress appears and behind her, follows villager A."
+    "A portal appears suddenly, expecting an enemy, you ready your instrument. However, a woman in an elegant dress appears and behind her, follows villager."
     show messenger L
     v "Well done Maestro! You have proven yourself worthy to be the hero of BrassWood! Let me present to you her Majesty Queen Tuba!"
     hide messenger L
     show queen
-    queen "Hello Maestro, I am Queen Tuba, the Queen of the Brass Kingdom. I have been monitoring you through my messenger, villager A for a while and I must admit that your musical talent is truly unrivaled."
+    queen "Hello Maestro, I am Queen Tuba, the Queen of the Brass Kingdom. I have been monitoring you through my messenger, villager for a while and I must admit that your musical talent is truly unrivaled."
     m "I am no hero, nor do I care about your true identities. I finished my task and I am awaiting my rewards."
     queen "No rush Maestro, I am here for your rewards as well as future cooperation. My husband, King Tuba has become mad with power after being corrupted and I wish an end to the bloodshed he caused."
     queen "Hence, I want your help. I will give you quests through my messenger and for every quest you complete, I will of course reward you generously!"
@@ -443,12 +444,14 @@ label quest4c:
     pause
     show queen
     queen "Congratulations Maestro, you have saved the Kingdom of Brass and Orchestria! On behalf of the Kingdom of Brass, I thank you."
+    hide queen
     "In the stillness of the aftermath, all that is heard is the distant wind, you should feel victory and satisfaction, however all that you feel is an empty void…"
     "As if nothing has been solved… The King told you about corruption, however was he… not the corrupted one?"
     "Through your conversation with him, you knew he was not mad… but if he was not, could he not see his own tyranny?"
     "Or was there more…"
     pause
     "3 days later..."
+    show queen
     queen "Maestro, you have done much good in your life and for saving Orchestria from the tyranny of the old Tuba King II, you saved my Kingdom too… "
     queen "Hence, I would like to knight you and give you the title of Duke for your accomplishments!"
     menu:
@@ -484,7 +487,7 @@ label option2a:
 
     play music queen2 loop
 
-    scene throne room 2
+    scene bg throne room 2
     show queen
     queen "YOU FOOL! That was not even my final form!"
     m "OK"
@@ -503,5 +506,9 @@ label option2b:
     queen "How is this possible? How..."
     m "I have the power of God and anime by my side! That is why!"
     queen "AAAAARRRRGH!!"
+    hide queen
+    scene bg throne room 1
+    "With the defeat of Queen Tuba, the corruption is no more and you become the King. Peace came back to Orchestria and people rejoiced under your reign while it lasted."
+    "History later records you as a generous and righteous King who eliminated the corruption of the land and blessed the people with prosperity."
     pause
     $MainMenu(confirm=False)()

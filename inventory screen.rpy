@@ -153,7 +153,7 @@ screen inventory_screen:
                     if selected_item.isEquipped:
                         textbutton "Unequip" xalign 0.5 action Function(selected_item.unequip)
                     else:
-                        textbutton "Equip" xalign 0.5 action Function(selected_item.equip)
+                        textbutton "Equip" xalign 0.5 action Function(changeEquip, p, selected_item)
 
                 # Sell (if shopping)
                 if shopping:

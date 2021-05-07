@@ -28,11 +28,7 @@ init 2 python:
     ((0, None), (1, steinway_mouthpiece)) : 15,
     ((0, None), (1, steinway_bell)) : 15,
     ((0, None), (1, steinway_tube)) : 15,
-    ((0, None), (1, steinway_valve)) : 15,
-    ((0, None), (1, fender_mouthpiece)) : 3,
-    ((0, None), (1, fender_bell)) : 3,
-    ((0, None), (1, fender_tube)) : 3,
-    ((0, None), (1, fender_valve)) : 3
+    ((0, None), (1, steinway_valve)) : 15
     }
 
     # Act 1 boss
@@ -56,11 +52,7 @@ init 2 python:
     ((0, None), (1, fender_mouthpiece)) : 15,
     ((0, None), (1, fender_bell)) : 15,
     ((0, None), (1, fender_tube)) : 15,
-    ((0, None), (1, fender_valve)) : 15,
-    ((0, None), (1, yamaha_mouthpiece)) : 3,
-    ((0, None), (1, yamaha_bell)) : 3,
-    ((0, None), (1, yamaha_tube)) : 3,
-    ((0, None), (1, yamaha_valve)) : 3
+    ((0, None), (1, fender_valve)) : 15
     }
 
     # Act 2 boss
@@ -84,11 +76,7 @@ init 2 python:
     ((0, None), (1, yamaha_mouthpiece)) : 15,
     ((0, None), (1, yamaha_bell)) : 15,
     ((0, None), (1, yamaha_tube)) : 15,
-    ((0, None), (1, yamaha_valve)) : 15,
-    ((0, None), (1, shure_mouthpiece)) : 3,
-    ((0, None), (1, shure_bell)) : 3,
-    ((0, None), (1, shure_tube)) : 3,
-    ((0, None), (1, shure_valve)) : 3
+    ((0, None), (1, yamaha_valve)) : 15
     }
 
     # Act 3 boss

@@ -39,7 +39,7 @@ label start_fight_test:
 label start_fight_tuto:
 
     # Create bandit enemy
-    $e = Enemy("bandit", "Bandit", 20, 5, 0, lt_0, 15, 3)
+    $e = Enemy("bandit", "Bandit", 20, 5, 0, lt_0, 25, 3)
 
     # Show combat screen
     show screen combat
@@ -175,8 +175,10 @@ label start_fight:
         $et_now = et_1
     elif act == 2:
         $et_now = et_2
-    elif act == 2:
+    elif act == 3:
         $et_now = et_3
+    elif act == 4:
+        $et_now = et_4
     else:
         $et_now = et_test
 

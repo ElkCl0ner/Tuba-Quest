@@ -4,7 +4,7 @@ init 1 python:
     diamond_sword = Weapon("diamond sword", "Sword of FUCKING DEATH", 500, 5000)
     sennheiser_mouthpiece = Weapon("sword 1", "Sennheiser Sword", 10, 25)
     steinway_mouthpiece = Weapon("sword 2", "Steinway Sword", 30, 50)
-    fender_mouthpiece = Weapon("Sword 3", "Fender Sword", 100, 100)
+    fender_mouthpiece = Weapon("sword 3", "Fender Sword", 100, 100)
     yamaha_mouthpiece = Weapon("sword 4", "Yamaha Sword", 250, 200)
     shure_mouthpiece = Weapon("sword 5", "Shure Sword", 500, 400)
     divine_mouthpiece = Weapon("sword 6", "Divine Sword", 2, 500)
